@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="pagweb.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><span class="text-primary">INTERI</span>ORISMO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" onclick="window.scrollTo(0, 0)">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Espacios" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="form.html" class="nav-link">Presupuesto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- El siguiente div, representa una galeria de 3 imagenes utilizando componentes de bootsrap.
+ la clase "carousel" define que sera una galeria, y la clase "slide" especifica el tipo de 
+transicion que utiliza para las imagenes. Dentro del div, tambien se establece que el
+carrusel, pasara sus imagenes de manera automatica. 
+     -->
+
+     <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+        
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                aria-label="Slide 3"></button>
+        </div>
+
+<!--El siguiente código, proporciona la estructura para un carrusel con varias diapositivas.-->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/living 1.jpg" class="d-block w-100" alt="Foto de Living 1">
+                <div class="carousel-caption">
+                    <h5>Living</h5>
+                    <P>
+                        Mejora el interior de tu casa, oficina o local comercial.<br>
+                         Aumenta tu confort y bienestar.
+                    </P>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/local comercial 3.jpg" class="d-block w-100" alt="Foto de Living 2">
+                <div class="carousel-caption">
+                    <h5>Local comercial</h5>
+                    <P>
+                        Quiero ayudarte con el dieño de interiores apropiado.<br> 
+                        Que tu espacio sea mas comodo y funcional, que impresione!
+                    </P>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/oficina 2.jpg" class="d-block w-100" alt="Foto de Living 3">
+                <div class="carousel-caption">
+                    <section id="Oficina"></section>
+                    <h5>Oficina</h5>
+                    <P>
+                        Descubri con nosotros por donde empezar.
+                    </P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--El siguiente codigo, define secciones diferentes de la pagina web. En estas secciones, 
+encontraremos:"container" contenedores que ayudan a alinear y agrupar el contenido, "row" columnas
+que alinean los elementos en una estructura. Se define que ancho ocupara en la pantalla de 
+los distintos dispositivos. (diseño responsive). Hay etiquetas de imagenes, con rutas que
+expcifican de donde vienen. tambien hay encabezados y parrafos con textos.
+     -->
+    <section class="about section-paddings">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="./img/living 5.jpg" class="img-fluid" alt="Foto de living">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <section id="Espacios"></section>
+                        <h2>Espacios</h2>
+                        <p>La distribucion, el mobiliario y su tamaño, los accesorios, el color<br>y texturas de tu
+                            decoracion, condicionan tus ganas de: <br> estar, disfrutar y compartir TU ESPACIO. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h5>Este es el resultado de clientes<br>que decidieron contar con nosotros<br>para sus proyectos.
+                        </h5>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="card text-light text-center bg-dark pb-2">
+                                    <div class="card-body text-white">
+                                        <div class="img-area mb-4">
+                                            <img src="./img/oficina.jpg" class="img-fluid" alt="Foto ofi">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="card text-light text-center bg-dark pb-2">
+                                    <div class="card-body text-white">
+                                        <div class="img-area mb-4">
+                                            <img src="./img/oficina 1.jpg" class="img-fluid" alt="Foto oficina">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="card text-light text-center bg-dark pb-2">
+                                    <div class="card-body text-white">
+                                        <div class="img-area mb-4">
+                                            <img src="./img/oficina 2.jpg" class="img-fluid" alt="Foto oficina1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+<!-- En esta parte, defini una sección de equipo de trabajo en la página, 
+seguido de un formulario de contacto.La etiqueta <h2> muestra un encabezado que indica 
+un mensaje para que los usuarios rellenen el formulario si tienen alguna pregunta.
+La etiqueta <h6> muestra un encabezado que indica que se responderá en un plazo de 3 días. 
+La etiqueta <form> define un formulario de contacto. La etiqueta <input> crea un campo 
+de entrada de texto para que el usuario ingrese su nombre, correo y un mensaje.
+La etiqueta <button> crea un botón de envío para enviar el formulario.
+ -->
+<!--Este código carga un archivo JavaScript. 
+Este archivo es parte de la biblioteca Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="pagweb.js"></script>
+</body>
+
+</html>
+</body>
+</html>
